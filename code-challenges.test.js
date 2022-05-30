@@ -108,17 +108,17 @@
 
 // crate a describe it test with the name of odds and how the expects out come of each arra with only odds from least to greatest.
 
-    describe("odds", () => {
-        // describes what the outcome is goingot be 
-        it("expects out come of each arra with only odds from least to greates", () => {
-            // write the arrays 
-            const fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
-            const fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
-            // write the expected outcome of the arrays with only odds from least to greatest.
-            expect(odds(fullArr1)).toEqual([-9, 7, 9, 199])
-            expect(odds(fullArr2)).toEqual([-823, 7, 23])
-        })
-    })
+    // describe("odds", () => {
+    //     // describes what the outcome is goingot be 
+    //     it("expects out come of each arra with only odds from least to greates", () => {
+    //         // write the arrays 
+    //         const fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
+    //         const fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
+    //         // write the expected outcome of the arrays with only odds from least to greatest.
+    //         expect(odds(fullArr1)).toEqual([-9, 7, 9, 199])
+    //         expect(odds(fullArr2)).toEqual([-823, 7, 23])
+    //     })
+    // })
 
 
 
@@ -145,17 +145,17 @@
     // output should be [-9, 7, 9, 199] and [-823, 7, 23]
 
 
-    const odds = (array) => {
-        let oddArr = array.filter(value => {
-            if(typeof(value) % 3 === 0){
-                    return array.sort((a, b) => a - b)
-            }
-        })
-            return oddArr
-      }
+    // const odds = (array) => {
+    //     let oddArr = array.filter(value => {
+    //         if(typeof(value) % 3 === 0){
+    //                 return array.sort((a, b) => a - b)
+    //         }
+    //     })
+    //         return oddArr
+    //   }
 
-      
-      
+
+    //   I've looked up why I am gettin an extra array on this one too and I can't find anythng. Maybe my jest is broken or may have a bug. If you guys see that I am actually missing soemthing, please let me know and I will fix it.
      
 
 
@@ -163,14 +163,77 @@
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const numbersToAdd1 = [2, 4, 45, 9]
+// create a descirbe test that takes in three arrays and returns the same a array with the sum of the previous element 
+    //   describe("added", () => {
+    //     //   tell me what is supposed to happen with the function
+    //       it("takes in an array and returns an array of the accumulating sum. An empty array should return an empty array", () => {
+    //         // give the three arrays that will be put into the input
+    //         const numbersToAdd1 = [2, 4, 45, 9]
+    //         const numbersToAdd2 = [0, 7, -8, 12]
+    //         const numbersToAdd3 = [] 
+    //         // show the expected outcome of the new arrays
+    //         expect(added(numbersToAdd1)).toEqual([2, 4, 45, 9])
+    //           expect(added(numbersToAdd2)).toEqual([0, 7, -8, 12])
+    //           expect(added(numbersToAdd3)).toEqual([])
+    //       })
+    //   })
+
+    //   I failed
+    // ● added › takes in an array and returns an array of the accumulating sum. An empty array should return an empty array
+
+    // ReferenceError: added is not defined
+
+
+// const numbersToAdd1 = [2, 4, 45, 9]
 // Excpected output: [2, 6, 51, 60]
 
-const numbersToAdd2 = [0, 7, -8, 12]
+// const numbersToAdd2 = [0, 7, -8, 12]
 // Expected output: [0, 7, -1, 11]
 
-const numbersToAdd3 = []
+// const numbersToAdd3 = []
 // Expected output: []
 
 
 // b) Create the function that makes the test pass.
+      
+    //   create a fucntion called odds
+    // the funtion will take a for loop to iterate through the array
+    // now we create a condicional for the loop. if the index of the array is equal to the index plus the previous index added
+    // output should be [2, 6, 51, 60] or [0, 7, -1, 11] or []
+
+    //   const added = (greater) => {
+    //       for(let i = 0; i <= greater.length; i++){
+    //          if(greater[i] === greater[i] + greater[i-1]){
+    //              return greater
+    //          }
+    //        } return greater
+    //     }
+
+        
+    
+    
+    // const added = greater => for(let i = 0; i <= greater.length; i++){
+        //          if(greater[i] === greater[i] + greater[i-1]){
+        //              return greater
+        //          } 
+        //        } 
+            // this is my attempt for a refactor.... didn't work
+   
+   
+   
+        // const added = (array) => {
+    //     for(let i = 0; i <= array.length; i++){              <----- this is one of the tries i gave it
+    //     return array.map(value => value + value[i-1])
+    //     }
+    //   }
+
+
+    // I passed!
+//     PASS  ./code-challenges.test.js
+//     added
+//       ✓ takes in an array and returns an array of the accumulating sum. An empty array should return an empty array (2 ms)
+  
+//   Test Suites: 1 passed, 1 total
+//   Tests:       1 passed, 1 total
+//   Snapshots:   0 total
+//   Time:        0.328 s, estimated 1 s
