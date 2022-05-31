@@ -45,25 +45,26 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Yarn is a configuration to run programs such as jest and react. Both created by facebook. It modifies the files .json in the the application. I=You will know if it didn't work if you aren't running yarn correctly because the terminal will have an error show tha the json files weren't correctly read.
 
-  Researched answer: Yarn is a package manager that allows us to share our javascript fast adn reliably around the world. I also learned that yarn is basically to predecessor of npm which is one of the hugely used package mangers in the world. The file that is added and modified is the yarn.lock file.
+  Researched answer: Yarn is a package manager that allows us to share our javascript fast adn reliably around the world. I also learned that yarn is basically to predecessor of npm which is one of the hugely used package mangers in the world. The file that is added and modified is the yarn.lock file. The yarn lock file is very important, especially when working in a team. thsi also being because the lock locks the version number and the identifier of the json file. I read that it said it complicates things getting a new verison when the provided json file is a different version.
 
 
 
 6. STRETCH: What is an anonymous function in JavaScript?
 
-  Your answer:
+  Your answer: An anonymous function is a way to tell jsx to not continue doing a function continuously. You set it where the change of state is going to happen.
 
-  Researched answer:
+  Researched answer: Read that it was a funciton without a name.  Sounds pretty obvious. it can be used in variables and as anl argument. It need to be placed in between () in order for it work. So if you left it outside of and type of brackets it would not work. This non named function can only be called from it's initial creation, so in order to use it more than once we would have ot put it into a variable.
 
 
 ## Looking Ahead: Terms for Next Week
 
-1. Conditional rendering:
+1. Conditional rendering: this is a way for react to update the UI if a condition is met. So it will change the elements to match the current state of the condition.
 
-2. Object-oriented programming:
+2. Object-oriented programming: this is a way of manipulating the objects without using any functions or logic. This allows for easier accessibility and reusability. they use their own classes to put objects within to be able to manipulate the objects. As I was reading it sounded a little complex, but it's just something I would need hands on with.
 
-3. Ruby:
 
-4. Ruby blocks:
+3. Ruby: Ruby was created to be simple. when coding in ruby everything in it is a object. I read an interesting line that said ruby takes out a lot of the programming details for it to be more understandable.
 
-5. Ruby hashes:
+4. Ruby blocks: ruby blocks are objects with brackets or a do-end process. The value received from the block returns do the method that invoked it. I trued reading about what that meant but it wasnt clear. or at least to me.
+
+5. Ruby hashes: ruby hashes contain keys and values withing those keys. It's like when you use an object. they work a little like arrays, but when used in iteration and trying to get a return array or value of the order, it won't come out in the order expected. It has a mined of it's own. we separate the key and value withing the {} with a => so it kind of looks like a function.
